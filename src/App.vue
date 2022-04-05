@@ -96,8 +96,8 @@
 </template>
 
 <script>
-import entities from "/assets/entidades.json";
-import localidades from "/assets/localidades.json";
+import entities from "/assets/data/entidades.json";
+import localidades from "/assets/data/localidades.json";
 
 export default {
   data() {
