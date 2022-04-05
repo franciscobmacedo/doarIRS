@@ -39,7 +39,6 @@
 
         <v-col cols="12" md="6" class="py-0">
           <v-autocomplete
-            v-if="$vuetify.breakpoint.mdAndUp"
             chips
             dense
             clearable
@@ -49,17 +48,6 @@
             label="Localidade"
             multiple
             no-data-text="Esta localidade não existe"
-          />
-          <v-select
-            v-else
-            chips
-            dense
-            clearable
-            deletable-chips
-            v-model="localitiesFilter"
-            :items="localities"
-            label="Localidade"
-            multiple
           />
         </v-col>
       </v-row>
