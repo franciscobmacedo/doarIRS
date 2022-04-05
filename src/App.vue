@@ -12,10 +12,19 @@
     >
     <v-container class="mb-10">
       <div
-        class="font-weight-bold display-1 mb-3 mt-2"
+        class="
+          font-weight-bold
+          display-1
+          mb-3
+          mt-2
+          d-flex
+          justify-center
+          align-center
+        "
         :class="$vuetify.breakpoint.mdAndUp ? 'text-center' : ''"
       >
         A quem posso doar 0.5% do IRS?
+        <v-img class="ml-5" :src="logo" max-height="30" max-width="30"></v-img>
       </div>
       <v-row align="end" class="mb-1">
         <v-col cols="12" md="6" style="margin-bottom: 0.35rem">
@@ -102,6 +111,7 @@ export default {
         { text: "Nome", value: "NOME" },
         { text: "Localidade", value: "LOCALIDADE" },
       ],
+      logo: require("/assets/images/logo.png"),
     };
   },
   async created() {
